@@ -1,0 +1,23 @@
+{
+  "name": "projet-7-groupomania-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apex-C/Projet-7-groupomania-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Apex-C/Projet-7-groupomania-backend/issues"
+  },
+  "homepage": "https://github.com/Apex-C/Projet-7-groupomania-backend#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
