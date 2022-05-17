@@ -18,7 +18,7 @@ exports.signup = (req, res, next) => {
                             isAdmin: true,
                         })
                         user.save()
-                            .then(() => res.status(201).json({ message: "Utilisateur créé !" }))
+                            .then(() => res.status(201).json({ message: "Admin créé !" }))
                             .catch(error => res.status(401).json({ error }))
                     })
                     .catch(error => res.status(500).json({ error }))
@@ -43,6 +43,7 @@ exports.signup = (req, res, next) => {
 
 // Connexion d'un utilisateur
 exports.login = (req, res, next) => {
+    console.log(req.body.email)
     User.findOne({ where: { email: req.body.email } })
         .then(user => {
             if (user.isActive === false) {
