@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken")
 
 // Creation d'un nouvel utilisateur
 exports.signup = (req, res, next) => {
+    // Creation du compte Admin 
     User.findAll()
         .then((database) => {
             if (database.length === 0) {
@@ -23,6 +24,7 @@ exports.signup = (req, res, next) => {
                     })
                     .catch(error => res.status(500).json({ error }))
             } else {
+                // Creation des utilisateurs
                 bcrypt.hash(req.body.password, 10)
                     .then(hash => {
                         const user = new User({
