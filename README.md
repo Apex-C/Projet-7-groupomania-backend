@@ -9,3 +9,9 @@
 - Base de données **MySQL**
 - ORM **Sequelize**
 - **Api RESET**
+
+## NOTES:
+
+- Au lancement du serveur backend, la base de données sera créée automatiquement.
+
+- Le compte administrateur sera crée en même temps que le premier utilisateur.
