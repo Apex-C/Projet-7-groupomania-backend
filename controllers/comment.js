@@ -4,7 +4,7 @@ const User = db.users
 
 // Tous les commentaire d'un message
 exports.findAllComments = (req, res, next) => {
-    const CommentsForOneMessage = {}
+    // const CommentsForOneMessage = {}
     Comment.findAll({
         where: {
             MessageId: req.params.id

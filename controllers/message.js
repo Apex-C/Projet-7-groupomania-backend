@@ -60,7 +60,8 @@ exports.findAllMessages = (req, res, next) => {
                         UserId: message.UserId,
                         userName: message.User.userName,
                         avatar: message.User.avatar,
-                        isActive: message.User.isActive
+                        isActive: message.User.isActive,
+
                     }
                 )
             })
