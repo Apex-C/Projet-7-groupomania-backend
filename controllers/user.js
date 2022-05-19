@@ -42,3 +42,20 @@ exports.modifyUser = (req, res, next) => {
         .then(() => res.status(200).json({ ...userObject }))
         .catch(error => res.status(400).json({ error }))
 }
+
+
+
+exports.deleteUser = (req, res,) => {
+    User.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+        .then(() => res.status(200).json({
+            message: 'Profil du user supprimé !'
+        }))
+        .catch(error => res.status(400).json({
+            error
+        }))
+
+}

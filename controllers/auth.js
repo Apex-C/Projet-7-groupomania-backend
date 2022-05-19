@@ -17,6 +17,7 @@ exports.signup = (req, res, next) => {
                             email: req.body.email,
                             password: hash,
                             isAdmin: true,
+                            avatar: "http://127.0.0.1:3000/images/admin_compresse.png"
                         })
                         user.save()
                             .then(() => res.status(201).json({ message: "Admin créé !" }))
