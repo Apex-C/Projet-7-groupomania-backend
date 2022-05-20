@@ -20,4 +20,4 @@
 
 creer un fichier .env avec les variable d'environement pour se connecter à la base de donnée
 npm install pour installer le package
-npm start pour demarer le projet
+node start pour demarer le projet
