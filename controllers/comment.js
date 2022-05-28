@@ -16,7 +16,7 @@ exports.findAllComments = (req, res, next) => {
         },
         order: [["id", "DESC"]]
     })
-        .then(rest => { res.status(200).json(rest) })
+        .then(rest => { res.status(201).json(rest) })
         .catch(error => res.status(400).json({ error }))
 }
 

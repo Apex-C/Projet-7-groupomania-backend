@@ -21,7 +21,7 @@ schema
 // Creation d'un nouvel utilisateur
 exports.signup = (req, res, next) => {
     if (!schema.validate(req.body.password)) {
-        return res.status(400).json({
+        return res.status(402).json({
             error: 'Votre mot de passe doit contenir des majuscules, des minisules, deux chiffres minimum et sans espaces',
         });
     }
