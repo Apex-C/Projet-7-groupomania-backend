@@ -2,9 +2,10 @@
 
 ## _reseau social d'entreprise_
 
-### Compétences évaluées
+### Compétences 
 
 >Authentifier un utilisateur et maintenir sa session
+
 >Implémenter un stockage de données sécurisé en utilisant une base de données
 
 ### Tech
