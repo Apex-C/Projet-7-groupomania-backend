@@ -4,8 +4,8 @@
 
 ### Compétences évaluées
 
-> Authentifier un utilisateur et maintenir sa session
-> Implémenter un stockage de données sécurisé en utilisant une base de données
+>Authentifier un utilisateur et maintenir sa session
+>Implémenter un stockage de données sécurisé en utilisant une base de données
 
 ### Tech
 
