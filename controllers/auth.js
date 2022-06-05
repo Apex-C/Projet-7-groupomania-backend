@@ -73,7 +73,7 @@ exports.signup = (req, res, next) => {
 
 // Connexion d'un utilisateur
 exports.login = (req, res, next) => {
-
+    console.log(req.body)
     User.findOne({ where: { email: req.body.email } })
         .then(user => {
             if (user.isActive === false) {
